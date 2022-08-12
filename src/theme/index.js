@@ -13,9 +13,9 @@ const themes = [
     palette: {
       type: 'light',
       primary: {
-        dark: colors.indigo.A700,
-        main: colors.indigo.A400,
-        light: colors.indigo.A200,
+        dark: colors.deepPurple.A700,
+        main: colors.deepPurple.A400,
+        light: colors.deepPurple.A200,
       },
       secondary: {
         dark: colors.orange.A700,

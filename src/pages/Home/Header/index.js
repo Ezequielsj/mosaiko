@@ -15,7 +15,9 @@ const useStyles = makeStyles({
     boxShadow: 'none',
   },
   img: {
-    maxHeight: 55,
+    maxHeight: 53,
+    display: 'flex',
+    alignItems: 'center',
   },
   grow: {
     flexGrow: 1,
