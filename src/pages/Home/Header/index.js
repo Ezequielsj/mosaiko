@@ -5,7 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Box from '@material-ui/core/Box';
 import { Link } from 'react-router-dom';
 
-import WritePost from './WritePost';
+//import WritePost from './WritePost'; tava na linha 49
 import Notifications from './Notifications';
 import Account from './Account';
 import Settings from './Settings';
@@ -46,7 +46,7 @@ function Header() {
         </Link>
         <div className={classes.grow} />
         <div className={classes.userSection}>
-          <WritePost />
+        
           <Box ml={2}>
             <Notifications />
           </Box>

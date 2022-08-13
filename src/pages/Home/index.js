@@ -7,7 +7,6 @@ import NewPost from '../Post/New';
 import Feed from '../Feed';
 import Post from '../Post';
 import Profile from '../Profile';
-
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
@@ -30,6 +29,7 @@ function Home() {
       <Header />
       <div className={classes.toolbar} />
       <main className={classes.main}>
+    
         <Routes>
           <Route path="/" element={<Feed />} />
           <Route path="/:username" element={<Profile />} />
