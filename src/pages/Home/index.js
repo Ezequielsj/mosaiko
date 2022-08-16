@@ -14,10 +14,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.dark,
   },
   main: {
-    padding: 24,
+    //padding: 24,
   },
   toolbar: {
-    minHeight: 64,
+    minHeight: 80,
   },
 }));
 

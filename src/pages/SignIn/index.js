@@ -77,7 +77,7 @@ function SignIn() {
         className={classes.image}
       >
         
-        <img src="/images/logoBlack.jpeg" alt="logo" className={classes.img} />
+        <img src="/images/logoBlack.png" alt="logo" className={classes.img} />
         <Typography style={{ color: '#fff', fontSize: 35, lineHeight: '45px' }}>
           <strong>
             Mosaiko

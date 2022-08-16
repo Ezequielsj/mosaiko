@@ -18,6 +18,10 @@ const useStyles = makeStyles((theme) => ({
   write: {
   //paddingBottom: '10px'
   paddingBottom: theme.spacing(2),
+},
+
+feed: {
+ marginLeft: 290,
 }
 
 }));
@@ -41,12 +45,12 @@ function Feed() {
 
     
     
-    <Container maxWidth="lg">
+    <Container maxWidth="xl" >
       <Box display="flex">
         <Hidden smDown>
           <NavBar />
         </Hidden>
-        <div>
+        <div className={classes.feed}>
         <div className={classes.write}>
           <WritePost />
         </div>
@@ -54,6 +58,7 @@ function Feed() {
           {posts.map((post) => (
             <PostCard key={post.id} post={post} />
           ))}
+          
         </div>
         </div>
       </Box>

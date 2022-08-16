@@ -16,7 +16,7 @@ import moment from 'moment';
 const useStyles = makeStyles((theme) => ({
   root: {
     marginBottom: theme.spacing(2),
-    maxWidth: 700,
+    maxWidth: 500,
   },
   subheader: {
     display: 'flex',
