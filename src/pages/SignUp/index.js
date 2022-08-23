@@ -20,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
     height: '100vh',
   },
 
+  img: {
+    maxHeight: 200,},
+
   image: {
     backgroundImage: 'url(/images/background.jpg)',
     backgroundPosition: 'center',
@@ -68,12 +71,15 @@ function SignUp() {
         direction="column"
         justify="center"
         alignItems="center"
+        backgroundColor= 'Black'
         md={7}
         className={classes.image}
       >
+        
+        <img src="/images/logoBlack.png" alt="logo" className={classes.img} />
         <Typography style={{ color: '#fff', fontSize: 35, lineHeight: '45px' }}>
           <strong>
-            Simplificando a forma de conectar desenvolvedores de software!
+            Mosaiko
           </strong>
         </Typography>
         <Typography
@@ -85,9 +91,9 @@ function SignUp() {
             lineHeight: '30px',
           }}
         >
-          Compartilhe seu conhecimento com toda nossa rede de desenvolvedores de
-          software.
+          Dois pensam melhor do que um, mil pensam melhor do que dois.
         </Typography>
+      
       </Grid>
       <Grid item md={5}>
         <Box display="flex" flexDirection="column" alignItems="center" mt={8}>

@@ -7,9 +7,8 @@ import Box from '@material-ui/core/Box';
 import axios from '../../utils/axios';
 import PostCard from '../../components/PostCard';
 import NavBar from './NavBar';
-
 import WritePost from '../Home/Header/WritePost';
-
+import './style.css';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -20,9 +19,7 @@ const useStyles = makeStyles((theme) => ({
   paddingBottom: theme.spacing(2),
 },
 
-feed: {
- marginLeft: 290,
-}
+
 
 }));
 
@@ -47,10 +44,11 @@ function Feed() {
     
     <Container maxWidth="xl" >
       <Box display="flex">
-        <Hidden smDown>
+        <div className="navbar">
           <NavBar />
-        </Hidden>
-        <div className={classes.feed}>
+        </div>
+
+        <div className="postcard">
         <div className={classes.write}>
           <WritePost />
         </div>
@@ -61,6 +59,7 @@ function Feed() {
           
         </div>
         </div>
+        
       </Box>
     </Container>
     

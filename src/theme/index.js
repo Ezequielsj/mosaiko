@@ -18,9 +18,9 @@ const themes = [
         light: colors.deepPurple.A200,
       },
       secondary: {
-        dark: colors.orange.A700,
-        main: colors.orange.A700,
-        light: colors.orange.A200,
+        dark: colors.deepPurple.A700,
+        main: colors.deepPurple.A700,
+        light: colors.deepPurple.A200,
       },
       background: {
         default: colors.common.white,
@@ -38,14 +38,14 @@ const themes = [
     palette: {
       type: 'dark',
       primary: {
-        dark: colors.indigo.A700,
-        main: colors.indigo.A400,
-        light: colors.indigo.A200,
+        dark: colors.deepPurple.A700,
+        main: colors.deepPurple.A400,
+        light: colors.deepPurple.A200,
       },
       secondary: {
-        dark: colors.indigo.A700,
-        main: colors.indigo.A400,
-        light: colors.indigo.A200,
+        dark: colors.deepPurple.A700,
+        main: colors.deepPurple.A400,
+        light: colors.deepPurple.A200,
       },
       background: {
         default: '#282C34',

@@ -1,0 +1,14 @@
+
+.postcard {
+    margin-left: 290px;
+}
+
+
+@media (max-width: 855px) {
+    .navbar {
+        display: none;
+    }
+    .postcard {
+        margin: auto;
+    }
+}
