@@ -3,6 +3,10 @@
     margin-left: 290px;
 }
 
+.arrow {
+    transform: rotate(45deg)
+    }
+
 
 @media (max-width: 855px) {
     .navbar {

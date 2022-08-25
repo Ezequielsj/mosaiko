@@ -29,7 +29,7 @@ function WritePost() {
   return (
     
     <Button className={classes.button} variant="contained" color="primary" onClick={handleClick}>
-      post new problem      [ 0 ]
+      post new problem
     </Button>
   );
 }

@@ -1,0 +1,24 @@
+
+.arrow {
+    /*transform: rotate(45deg)*/
+    transform: rotate(180deg);
+}
+
+.icons {
+    justify-content: space-around;
+    display: flex;
+}
+
+.line {
+    border-bottom : 1px solid rgba(116, 115, 115, 0.4);
+    width: 95%;
+    margin: auto;
+}
+
+.ma {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    justify-content: space-around;
+    display: flex;
+}
+

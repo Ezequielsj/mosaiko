@@ -18,9 +18,9 @@ const themes = [
         light: colors.deepPurple.A200,
       },
       secondary: {
-        dark: colors.deepPurple.A700,
-        main: colors.deepPurple.A700,
-        light: colors.deepPurple.A200,
+        dark: colors.orange.A700,
+        main: colors.orange.A700,
+        light: colors.orange.A200,
       },
       background: {
         default: colors.common.white,

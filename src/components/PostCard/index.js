@@ -10,8 +10,14 @@ import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import MessageIcon from '@material-ui/icons/Message';
-import { useNavigate } from 'react-router-dom';
+import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
+import MoreVertIcon from '@material-ui/icons/MoreVert';
+import ArrowDropDownCircleIcon from '@material-ui/icons/ArrowDropDownCircle';
+import './style.css';
+
+import { useBlocker, useNavigate } from 'react-router-dom';
 import moment from 'moment';
+import Button from '@material-ui/core/Button';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -19,12 +25,27 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(2),
     maxWidth: 500,
   },
+
+  boxHeader: {
+    display: 'flex',
+  
+
+  },
+
+  button: {
+    marginLeft: 'auto',
+    boxShadow: 'none',
+    borderRadius: '0px',
+    
+  },
+
   subheader: {
     display: 'flex',
     alignItems: 'center',
   },
   caption: {
     marginRight: theme.spacing(1),
+    
   },
   message: {
     height: 'auto',
@@ -42,6 +63,12 @@ const useStyles = makeStyles((theme) => ({
   favorite: {
     marginLeft: 'auto',
   },
+
+  text: {
+    display: 'flex'
+  },
+
+
 }));
 
 function PostCard({ post }) {
@@ -54,9 +81,11 @@ function PostCard({ post }) {
 
   return (
     <Card className={classes.root} onClick={handlePostClick}>
+      <div  className={classes.boxHeader}>
       <CardHeader
+     
         avatar={<Avatar src={post.author?.avatar} />}
-        title={<Typography variant="h6">{post.title}</Typography>}
+        title={<Typography  variant="h6" >{post.title}</Typography>}
         subheader={
           <div className={classes.subheader}>
             <Typography variant="caption" className={classes.caption}>
@@ -68,9 +97,18 @@ function PostCard({ post }) {
             <Typography variant="caption" className={classes.caption}>
               {moment(post.date).fromNow()}
             </Typography>
-          </div>
+          </div> 
         }
       />
+
+      <div >
+        <Button size="small" className={classes.button} variant="contained" color="primary" >
+        <Typography variant="h5">0</Typography>
+        </Button>
+      </div>
+
+        </div>
+
       <CardContent className={classes.content}>
         <Typography className={classes.message} variant="body1">
           {post.hashtags}
@@ -79,28 +117,81 @@ function PostCard({ post }) {
           <img src={post.image} className={classes.image} alt="img" />
         </CardActionArea>
       </CardContent>
-      <CardActions disableSpacing>
-        <IconButton aria-label="like">
-          <FavoriteIcon />
-          <Typography
+
+<div > 
+        
+        <div className="ma">
+          
+            <Typography
+            className={classes.typo}
             style={{ cursor: 'pointer' }}
             color="textSecondary"
             variant="body2"
           >
-            {post.likes}
+            {post.likes} Likes
           </Typography>
-        </IconButton>
-        <IconButton aria-label="comment">
-          <MessageIcon />
+          
           <Typography
-            className={classes.reactions}
+           className={classes.typo}
+        
             color="textSecondary"
             variant="body2"
           >
-            {post.comments}
+            {post.comments} Solution
           </Typography>
+           
+        </div>
+        <div className="line" />
+        
+        
+        
+          
+      <CardActions disableSpacing className="icons">
+        
+        <div>
+
+        <IconButton aria-label="like">
+          <FavoriteIcon style={{ fontSize: 32 }}/>
         </IconButton>
+         </div>
+         
+       {/*  
+        <IconButton aria-label="comment">
+          <MessageIcon />
+        </IconButton> */}
+        
+        
+      
+
+        <IconButton aria-label="like">
+          <EmojiObjectsIcon style={{ fontSize: 34 }} />
+        </IconButton>
+
+
+        <div className="arrow">
+        <div className="arrow">
+        <IconButton aria-label="like" className="arrow">
+          <ArrowDropDownCircleIcon className="arrow" style={{ fontSize: 32 }}/>
+        </IconButton>
+        </div>
+        </div>
+
+        <IconButton aria-label="like">
+          <MoreVertIcon  style={{ fontSize: 32 }}/>
+        </IconButton>
+
+       
+        
+
+      
+
+
       </CardActions>
+
+      
+      </div>
+
+
     </Card>
   );
 }

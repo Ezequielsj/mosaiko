@@ -13,8 +13,9 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     width: 275,
     marginRight: theme.spacing(2),
-    height: 400,
+    height: 540,
     position: 'fixed'
+    
   },
   button: {
     width: '100%',
@@ -22,12 +23,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const tags = [
-  { id: 1, name: 'reactjs' },
+ /*  { id: 1, name: 'reactjs' },
   { id: 2, name: 'javascript' },
   { id: 3, name: 'dotnet' },
   { id: 4, name: 'php' },
   { id: 5, name: 'materialdesign' },
-  { id: 6, name: 'webdev' },
+  { id: 6, name: 'webdev' }, */
 ];
 
 function NavBar() {
@@ -48,13 +49,13 @@ function NavBar() {
           Registrar Gratis
         </Button>
       )}
-      <ListSubheader>Tags em alta</ListSubheader>
+      <ListSubheader>{/* Tags em alta */}</ListSubheader>
       {tags.map((item) => (
         <ListItem dense button key={`item-${item.id}-${item.name}`}>
           <ListItemText primary={`#${item.name}`} />
         </ListItem>
       ))}
-      <ListItem button>Exibir mais Tags</ListItem>
+     {/*  <ListItem button>Exibir mais Tags</ListItem> */}
     </Paper>
   );
 }
